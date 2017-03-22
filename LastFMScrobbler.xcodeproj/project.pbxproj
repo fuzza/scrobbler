@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BC1B56496086A20A810D456 /* Pods_LastFMScrobblerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B736A249151A655903CCA2AB /* Pods_LastFMScrobblerTests.framework */; };
+		6FE2323F1E81621300664566 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2323E1E81621300664566 /* main.m */; };
+		6FE232421E81621300664566 /* LFSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232411E81621300664566 /* LFSAppDelegate.m */; };
+		6FE232451E81621300664566 /* LFSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232441E81621300664566 /* LFSViewController.m */; };
+		6FE232481E81621300664566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE232461E81621300664566 /* Main.storyboard */; };
+		6FE2324A1E81621300664566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE232491E81621300664566 /* Assets.xcassets */; };
+		6FE2324D1E81621300664566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE2324B1E81621300664566 /* LaunchScreen.storyboard */; };
+		6FE232691E81681300664566 /* LFSArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232681E81681300664566 /* LFSArtist.m */; };
+		6FE2326C1E81691900664566 /* LFSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2326B1E81691900664566 /* LFSImage.m */; };
+		6FE2326E1E816C9E00664566 /* LFSArtistMappingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2326D1E816C9E00664566 /* LFSArtistMappingTests.m */; };
+		6FE232701E816E0900664566 /* artist_fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FE2326F1E816E0900664566 /* artist_fixture.json */; };
+		6FE232771E81720A00664566 /* LFSError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232761E81720A00664566 /* LFSError.m */; };
+		6FE2327B1E81727F00664566 /* LFSAPIRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2327A1E81727F00664566 /* LFSAPIRequestSerializer.m */; };
+		6FE2327E1E81757D00664566 /* LFSHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2327D1E81757D00664566 /* LFSHTTPClient.m */; };
+		6FE232811E81790E00664566 /* LFSAPIFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232801E81790E00664566 /* LFSAPIFacade.m */; };
+		6FE2328C1E81800A00664566 /* LFSArtistsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2328B1E81800A00664566 /* LFSArtistsRequest.m */; };
+		6FE2328F1E8181F300664566 /* LFSAlbumsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2328E1E8181F300664566 /* LFSAlbumsRequest.m */; };
+		6FE232921E8182AC00664566 /* LFSAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232911E8182AC00664566 /* LFSAlbum.m */; };
+		6FE2329B1E81938300664566 /* LFSArtistsResponseWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2329A1E81938300664566 /* LFSArtistsResponseWrapper.m */; };
+		6FE232A61E82D37600664566 /* LFSAlbumsResponseWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232A51E82D37600664566 /* LFSAlbumsResponseWrapper.m */; };
+		8ACFB868F55CB414487EB088 /* Pods_LastFMScrobbler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE371A6DB9F4FE0CEC9DA8D /* Pods_LastFMScrobbler.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FE232541E81621300664566 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FE232321E81621300664566 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FE232391E81621300664566;
+			remoteInfo = LastFMScrobbler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0121B12914E084A9D35639A8 /* Pods-LastFMScrobbler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LastFMScrobbler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LastFMScrobbler/Pods-LastFMScrobbler.debug.xcconfig"; sourceTree = "<group>"; };
+		584D57C3B4BBEB23575843F4 /* Pods-LastFMScrobblerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LastFMScrobblerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LastFMScrobblerTests/Pods-LastFMScrobblerTests.release.xcconfig"; sourceTree = "<group>"; };
+		6FE2323A1E81621300664566 /* LastFMScrobbler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastFMScrobbler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE2323E1E81621300664566 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6FE232401E81621300664566 /* LFSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSAppDelegate.h; sourceTree = "<group>"; };
+		6FE232411E81621300664566 /* LFSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSAppDelegate.m; sourceTree = "<group>"; };
+		6FE232431E81621300664566 /* LFSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSViewController.h; sourceTree = "<group>"; };
+		6FE232441E81621300664566 /* LFSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSViewController.m; sourceTree = "<group>"; };
+		6FE232471E81621300664566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FE232491E81621300664566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FE2324C1E81621300664566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6FE2324E1E81621300664566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FE232531E81621300664566 /* LastFMScrobblerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LastFMScrobblerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE232591E81621300664566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FE232671E81681300664566 /* LFSArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSArtist.h; sourceTree = "<group>"; };
+		6FE232681E81681300664566 /* LFSArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSArtist.m; sourceTree = "<group>"; };
+		6FE2326A1E81691900664566 /* LFSImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSImage.h; sourceTree = "<group>"; };
+		6FE2326B1E81691900664566 /* LFSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSImage.m; sourceTree = "<group>"; };
+		6FE2326D1E816C9E00664566 /* LFSArtistMappingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSArtistMappingTests.m; sourceTree = "<group>"; };
+		6FE2326F1E816E0900664566 /* artist_fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artist_fixture.json; sourceTree = "<group>"; };
+		6FE232751E81720A00664566 /* LFSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSError.h; sourceTree = "<group>"; };
+		6FE232761E81720A00664566 /* LFSError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSError.m; sourceTree = "<group>"; };
+		6FE232791E81727F00664566 /* LFSAPIRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAPIRequestSerializer.h; sourceTree = "<group>"; };
+		6FE2327A1E81727F00664566 /* LFSAPIRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSAPIRequestSerializer.m; sourceTree = "<group>"; };
+		6FE2327C1E81757D00664566 /* LFSHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSHTTPClient.h; sourceTree = "<group>"; };
+		6FE2327D1E81757D00664566 /* LFSHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSHTTPClient.m; sourceTree = "<group>"; };
+		6FE2327F1E81790E00664566 /* LFSAPIFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAPIFacade.h; sourceTree = "<group>"; };
+		6FE232801E81790E00664566 /* LFSAPIFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSAPIFacade.m; sourceTree = "<group>"; };
+		6FE232871E817F2500664566 /* LFSAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAPIRequest.h; sourceTree = "<group>"; };
+		6FE2328A1E81800A00664566 /* LFSArtistsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSArtistsRequest.h; sourceTree = "<group>"; };
+		6FE2328B1E81800A00664566 /* LFSArtistsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSArtistsRequest.m; sourceTree = "<group>"; };
+		6FE2328D1E8181F300664566 /* LFSAlbumsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAlbumsRequest.h; sourceTree = "<group>"; };
+		6FE2328E1E8181F300664566 /* LFSAlbumsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSAlbumsRequest.m; sourceTree = "<group>"; };
+		6FE232901E8182AC00664566 /* LFSAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAlbum.h; sourceTree = "<group>"; };
+		6FE232911E8182AC00664566 /* LFSAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSAlbum.m; sourceTree = "<group>"; };
+		6FE232941E8189F500664566 /* LFSAPIRequestExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAPIRequestExecutor.h; sourceTree = "<group>"; };
+		6FE232991E81938300664566 /* LFSArtistsResponseWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSArtistsResponseWrapper.h; sourceTree = "<group>"; };
+		6FE2329A1E81938300664566 /* LFSArtistsResponseWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSArtistsResponseWrapper.m; sourceTree = "<group>"; };
+		6FE232A41E82D37600664566 /* LFSAlbumsResponseWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAlbumsResponseWrapper.h; sourceTree = "<group>"; };
+		6FE232A51E82D37600664566 /* LFSAlbumsResponseWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSAlbumsResponseWrapper.m; sourceTree = "<group>"; };
+		A74B7CB3035F902785616056 /* Pods-LastFMScrobbler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LastFMScrobbler.release.xcconfig"; path = "Pods/Target Support Files/Pods-LastFMScrobbler/Pods-LastFMScrobbler.release.xcconfig"; sourceTree = "<group>"; };
+		B736A249151A655903CCA2AB /* Pods_LastFMScrobblerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LastFMScrobblerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE371A6DB9F4FE0CEC9DA8D /* Pods_LastFMScrobbler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LastFMScrobbler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06BDFE861BF8E501FDC573E /* Pods-LastFMScrobblerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LastFMScrobblerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LastFMScrobblerTests/Pods-LastFMScrobblerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FE232371E81621300664566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ACFB868F55CB414487EB088 /* Pods_LastFMScrobbler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE232501E81621300664566 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC1B56496086A20A810D456 /* Pods_LastFMScrobblerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		583B1E4C01BA2F27C4953A5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0121B12914E084A9D35639A8 /* Pods-LastFMScrobbler.debug.xcconfig */,
+				A74B7CB3035F902785616056 /* Pods-LastFMScrobbler.release.xcconfig */,
+				F06BDFE861BF8E501FDC573E /* Pods-LastFMScrobblerTests.debug.xcconfig */,
+				584D57C3B4BBEB23575843F4 /* Pods-LastFMScrobblerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6FE232311E81621300664566 = {
+			isa = PBXGroup;
+			children = (
+				6FE2323C1E81621300664566 /* LastFMScrobbler */,
+				6FE232561E81621300664566 /* LastFMScrobblerTests */,
+				6FE2323B1E81621300664566 /* Products */,
+				583B1E4C01BA2F27C4953A5C /* Pods */,
+				CEFF3024A4B8F386BF6B87EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6FE2323B1E81621300664566 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FE2323A1E81621300664566 /* LastFMScrobbler.app */,
+				6FE232531E81621300664566 /* LastFMScrobblerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FE2323C1E81621300664566 /* LastFMScrobbler */ = {
+			isa = PBXGroup;
+			children = (
+				6FE232651E8167FE00664566 /* Domain */,
+				6FE232401E81621300664566 /* LFSAppDelegate.h */,
+				6FE232411E81621300664566 /* LFSAppDelegate.m */,
+				6FE232431E81621300664566 /* LFSViewController.h */,
+				6FE232441E81621300664566 /* LFSViewController.m */,
+				6FE232461E81621300664566 /* Main.storyboard */,
+				6FE232491E81621300664566 /* Assets.xcassets */,
+				6FE2324B1E81621300664566 /* LaunchScreen.storyboard */,
+				6FE2324E1E81621300664566 /* Info.plist */,
+				6FE2323D1E81621300664566 /* Supporting Files */,
+			);
+			path = LastFMScrobbler;
+			sourceTree = "<group>";
+		};
+		6FE2323D1E81621300664566 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FE2323E1E81621300664566 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FE232561E81621300664566 /* LastFMScrobblerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FE232591E81621300664566 /* Info.plist */,
+				6FE2326D1E816C9E00664566 /* LFSArtistMappingTests.m */,
+				6FE2326F1E816E0900664566 /* artist_fixture.json */,
+			);
+			path = LastFMScrobblerTests;
+			sourceTree = "<group>";
+		};
+		6FE232651E8167FE00664566 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6FE232781E81726300664566 /* API */,
+				6FE232661E81680200664566 /* Models */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		6FE232661E81680200664566 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6FE232671E81681300664566 /* LFSArtist.h */,
+				6FE232681E81681300664566 /* LFSArtist.m */,
+				6FE2326A1E81691900664566 /* LFSImage.h */,
+				6FE2326B1E81691900664566 /* LFSImage.m */,
+				6FE232751E81720A00664566 /* LFSError.h */,
+				6FE232761E81720A00664566 /* LFSError.m */,
+				6FE232901E8182AC00664566 /* LFSAlbum.h */,
+				6FE232911E8182AC00664566 /* LFSAlbum.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6FE232781E81726300664566 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6FE232931E81832400664566 /* APIRequests */,
+				6FE232851E817D0400664566 /* Client */,
+				6FE2327F1E81790E00664566 /* LFSAPIFacade.h */,
+				6FE232801E81790E00664566 /* LFSAPIFacade.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		6FE232851E817D0400664566 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				6FE232941E8189F500664566 /* LFSAPIRequestExecutor.h */,
+				6FE232791E81727F00664566 /* LFSAPIRequestSerializer.h */,
+				6FE2327A1E81727F00664566 /* LFSAPIRequestSerializer.m */,
+				6FE2327C1E81757D00664566 /* LFSHTTPClient.h */,
+				6FE2327D1E81757D00664566 /* LFSHTTPClient.m */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		6FE232931E81832400664566 /* APIRequests */ = {
+			isa = PBXGroup;
+			children = (
+				6FE232961E81935E00664566 /* Base */,
+				6FE232971E81936400664566 /* Artists */,
+				6FE232981E81936C00664566 /* Albums */,
+			);
+			name = APIRequests;
+			sourceTree = "<group>";
+		};
+		6FE232961E81935E00664566 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6FE232871E817F2500664566 /* LFSAPIRequest.h */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		6FE232971E81936400664566 /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				6FE2328A1E81800A00664566 /* LFSArtistsRequest.h */,
+				6FE2328B1E81800A00664566 /* LFSArtistsRequest.m */,
+				6FE232991E81938300664566 /* LFSArtistsResponseWrapper.h */,
+				6FE2329A1E81938300664566 /* LFSArtistsResponseWrapper.m */,
+			);
+			name = Artists;
+			sourceTree = "<group>";
+		};
+		6FE232981E81936C00664566 /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				6FE2328D1E8181F300664566 /* LFSAlbumsRequest.h */,
+				6FE2328E1E8181F300664566 /* LFSAlbumsRequest.m */,
+				6FE232A41E82D37600664566 /* LFSAlbumsResponseWrapper.h */,
+				6FE232A51E82D37600664566 /* LFSAlbumsResponseWrapper.m */,
+			);
+			name = Albums;
+			sourceTree = "<group>";
+		};
+		CEFF3024A4B8F386BF6B87EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCE371A6DB9F4FE0CEC9DA8D /* Pods_LastFMScrobbler.framework */,
+				B736A249151A655903CCA2AB /* Pods_LastFMScrobblerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FE232391E81621300664566 /* LastFMScrobbler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FE2325C1E81621300664566 /* Build configuration list for PBXNativeTarget "LastFMScrobbler" */;
+			buildPhases = (
+				7DDD2F3193CE4FA6685B1F6D /* [CP] Check Pods Manifest.lock */,
+				6FE232361E81621300664566 /* Sources */,
+				6FE232371E81621300664566 /* Frameworks */,
+				6FE232381E81621300664566 /* Resources */,
+				FEF4702C5D54AEE67EC28129 /* [CP] Embed Pods Frameworks */,
+				E2AFF2F25A74D1A0CFF2E277 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LastFMScrobbler;
+			productName = LastFMScrobbler;
+			productReference = 6FE2323A1E81621300664566 /* LastFMScrobbler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FE232521E81621300664566 /* LastFMScrobblerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FE2325F1E81621300664566 /* Build configuration list for PBXNativeTarget "LastFMScrobblerTests" */;
+			buildPhases = (
+				E02E24521F35A63A10A05243 /* [CP] Check Pods Manifest.lock */,
+				6FE2324F1E81621300664566 /* Sources */,
+				6FE232501E81621300664566 /* Frameworks */,
+				6FE232511E81621300664566 /* Resources */,
+				C03094F6A3C4DA028B1EA25D /* [CP] Embed Pods Frameworks */,
+				A6ACB27D3AE052827A55F92D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FE232551E81621300664566 /* PBXTargetDependency */,
+			);
+			name = LastFMScrobblerTests;
+			productName = LastFMScrobblerTests;
+			productReference = 6FE232531E81621300664566 /* LastFMScrobblerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FE232321E81621300664566 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LFS;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					6FE232391E81621300664566 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+					6FE232521E81621300664566 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6FE232391E81621300664566;
+					};
+				};
+			};
+			buildConfigurationList = 6FE232351E81621300664566 /* Build configuration list for PBXProject "LastFMScrobbler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FE232311E81621300664566;
+			productRefGroup = 6FE2323B1E81621300664566 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FE232391E81621300664566 /* LastFMScrobbler */,
+				6FE232521E81621300664566 /* LastFMScrobblerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FE232381E81621300664566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE2324D1E81621300664566 /* LaunchScreen.storyboard in Resources */,
+				6FE2324A1E81621300664566 /* Assets.xcassets in Resources */,
+				6FE232481E81621300664566 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE232511E81621300664566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE232701E816E0900664566 /* artist_fixture.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DDD2F3193CE4FA6685B1F6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6ACB27D3AE052827A55F92D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LastFMScrobblerTests/Pods-LastFMScrobblerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C03094F6A3C4DA028B1EA25D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LastFMScrobblerTests/Pods-LastFMScrobblerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E02E24521F35A63A10A05243 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2AFF2F25A74D1A0CFF2E277 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LastFMScrobbler/Pods-LastFMScrobbler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF4702C5D54AEE67EC28129 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LastFMScrobbler/Pods-LastFMScrobbler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FE232361E81621300664566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE232A61E82D37600664566 /* LFSAlbumsResponseWrapper.m in Sources */,
+				6FE232811E81790E00664566 /* LFSAPIFacade.m in Sources */,
+				6FE232451E81621300664566 /* LFSViewController.m in Sources */,
+				6FE232421E81621300664566 /* LFSAppDelegate.m in Sources */,
+				6FE232691E81681300664566 /* LFSArtist.m in Sources */,
+				6FE2326C1E81691900664566 /* LFSImage.m in Sources */,
+				6FE232771E81720A00664566 /* LFSError.m in Sources */,
+				6FE2327B1E81727F00664566 /* LFSAPIRequestSerializer.m in Sources */,
+				6FE232921E8182AC00664566 /* LFSAlbum.m in Sources */,
+				6FE2327E1E81757D00664566 /* LFSHTTPClient.m in Sources */,
+				6FE2328C1E81800A00664566 /* LFSArtistsRequest.m in Sources */,
+				6FE2328F1E8181F300664566 /* LFSAlbumsRequest.m in Sources */,
+				6FE2323F1E81621300664566 /* main.m in Sources */,
+				6FE2329B1E81938300664566 /* LFSArtistsResponseWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE2324F1E81621300664566 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE2326E1E816C9E00664566 /* LFSArtistMappingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FE232551E81621300664566 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FE232391E81621300664566 /* LastFMScrobbler */;
+			targetProxy = 6FE232541E81621300664566 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FE232461E81621300664566 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE232471E81621300664566 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6FE2324B1E81621300664566 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FE2324C1E81621300664566 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FE2325A1E81621300664566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FE2325B1E81621300664566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FE2325D1E81621300664566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0121B12914E084A9D35639A8 /* Pods-LastFMScrobbler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LastFMScrobbler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.test.LastFMScrobbler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6FE2325E1E81621300664566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74B7CB3035F902785616056 /* Pods-LastFMScrobbler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LastFMScrobbler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.test.LastFMScrobbler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6FE232601E81621300664566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06BDFE861BF8E501FDC573E /* Pods-LastFMScrobblerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LastFMScrobblerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.test.LastFMScrobblerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LastFMScrobbler.app/LastFMScrobbler";
+			};
+			name = Debug;
+		};
+		6FE232611E81621300664566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 584D57C3B4BBEB23575843F4 /* Pods-LastFMScrobblerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LastFMScrobblerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = biz.test.LastFMScrobblerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LastFMScrobbler.app/LastFMScrobbler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FE232351E81621300664566 /* Build configuration list for PBXProject "LastFMScrobbler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE2325A1E81621300664566 /* Debug */,
+				6FE2325B1E81621300664566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FE2325C1E81621300664566 /* Build configuration list for PBXNativeTarget "LastFMScrobbler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE2325D1E81621300664566 /* Debug */,
+				6FE2325E1E81621300664566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FE2325F1E81621300664566 /* Build configuration list for PBXNativeTarget "LastFMScrobblerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE232601E81621300664566 /* Debug */,
+				6FE232611E81621300664566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FE232321E81621300664566 /* Project object */;
+}
