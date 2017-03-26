@@ -21,4 +21,6 @@
 
 @property (nonatomic, readonly) NSArray <LFSImage *> *images;
 
+- (NSURL *)defaultImageURL;
+
 @end

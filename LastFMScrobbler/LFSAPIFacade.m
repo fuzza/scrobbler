@@ -17,6 +17,10 @@
 #import "LFSAlbumsRequest.h"
 #import "LFSAlbumsResponseWrapper.h"
 
+#import "LFSHTTPClient.h"
+#import "LFSCountry.h"
+#import "LFSArtist.h"
+
 @interface LFSAPIFacade ()
 
 @property (nonatomic, strong) id <LFSAPIRequestExecutor> executor;
@@ -33,18 +37,18 @@
     return self;
 }
 
-- (RACSignal /** NSArray <LFSArtist> */ *)topArtistsByCountry:(NSString *)country
+- (RACSignal /** NSArray <LFSArtist> */ *)topArtistsByCountry:(LFSCountry *)country
                                                          page:(NSUInteger)page {
-    LFSArtistsRequest *request = [[LFSArtistsRequest alloc] initWithCountry:country
+    LFSArtistsRequest *request = [[LFSArtistsRequest alloc] initWithCountry:country.name
                                                                        page:page];
     return [[self.executor performRequest:request] map:^id(LFSArtistsResponseWrapper *wrapper) {
         return wrapper.artists;
     }];
 }
 
-- (RACSignal /** NSArray <LFSAlbum> */ *)topAlbumsByArtistUid:(NSString *)uid
-                                                         page:(NSUInteger)page {
-    LFSAlbumsRequest *request = [[LFSAlbumsRequest alloc] initWithArtistUid:uid
+- (RACSignal /** NSArray <LFSAlbum> */ *)topAlbumsByArtist:(LFSArtist *)artist
+                                                      page:(NSUInteger)page {
+    LFSAlbumsRequest *request = [[LFSAlbumsRequest alloc] initWithArtistUid:artist.uid
                                                                        page:page];
     return [[self.executor performRequest:request] map:^id(LFSAlbumsResponseWrapper *wrapper) {
         return wrapper.albums;

@@ -10,12 +10,18 @@ PODS:
   - AFNetworking/Reachability (2.6.3)
   - AFNetworking/Security (2.6.3)
   - AFNetworking/Serialization (2.6.3)
-  - AppleGuice (1.3.0)
+  - CriolloKitDI (0.0.6):
+    - ISMethodSwizzling
+    - MAObjCRuntime
   - Expecta (1.0.5)
+  - FLAnimatedImage (1.0.12)
+  - ISMethodSwizzling (0.0.2)
   - Mantle (2.1.0):
     - Mantle/extobjc (= 2.1.0)
   - Mantle/extobjc (2.1.0)
+  - MAObjCRuntime (0.0.1)
   - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
   - OCMock (3.4)
   - Overcoat/Core (3.2.1):
     - AFNetworking/Serialization
@@ -36,6 +42,14 @@ PODS:
   - Overcoat/ReactiveCocoa/NSURLSession (3.2.1):
     - Overcoat/NSURLSession
     - ReactiveCocoa (~> 2.4)
+  - PINCache (2.3)
+  - PINRemoteImage (2.1.4):
+    - PINRemoteImage/FLAnimatedImage (= 2.1.4)
+  - PINRemoteImage/Core (2.1.4):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/FLAnimatedImage (2.1.4):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -43,24 +57,35 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - SSDataSources (0.8.6)
 
 DEPENDENCIES:
-  - AppleGuice
+  - CriolloKitDI
   - Expecta
   - Masonry
+  - MBProgressHUD
   - OCMock
   - Overcoat/ReactiveCocoa
+  - PINRemoteImage
+  - SSDataSources
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  AppleGuice: cf5500dbc85e872d9d18135d9aecde3535396f73
+  CriolloKitDI: a880f41296f1c23df41132ab7a6ede065a6ec507
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  ISMethodSwizzling: 5dafeb2efca548b0cc1407b265408974dfd85168
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  MAObjCRuntime: a6a1d95acbfa3784d66cb35bd42904e47943b488
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   OCMock: 35ae71d6a8fcc1b59434d561d1520b9dd4f15765
   Overcoat: ce2bd0bfee6e300839cb244799c9e1e1aa70c06a
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SSDataSources: ebcf6e435a090f1a940c5d2042cfb3f369f98a1d
 
-PODFILE CHECKSUM: 9bd3ff4923c9476bda32a55fdcf8e2fdcd553acc
+PODFILE CHECKSUM: e76dfe138f8cc15ee5cff13691c0a8dc9a361ca2
 
 COCOAPODS: 1.2.0

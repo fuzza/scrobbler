@@ -8,9 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1BC1B56496086A20A810D456 /* Pods_LastFMScrobblerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B736A249151A655903CCA2AB /* Pods_LastFMScrobblerTests.framework */; };
+		6F223E1E1E8571E400B48B78 /* LFSListFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F223E1D1E8571E400B48B78 /* LFSListFlowLayout.m */; };
+		6F223E241E8573EC00B48B78 /* LFSArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F223E231E8573EC00B48B78 /* LFSArtistsViewController.m */; };
+		6F223E271E8573F900B48B78 /* LFSArtistsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F223E261E8573F900B48B78 /* LFSArtistsViewModel.m */; };
+		6F223E2D1E87E41800B48B78 /* LFSRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F223E2C1E87E41800B48B78 /* LFSRouter.m */; };
+		6F223E301E87F1CE00B48B78 /* LFSAppScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F223E2F1E87F1CE00B48B78 /* LFSAppScope.m */; };
+		6F223E331E87F30800B48B78 /* LFSCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F223E321E87F30800B48B78 /* LFSCollectionViewModel.m */; };
+		6FAA578A1E87F57F00E29C5F /* LFSDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAA57891E87F57F00E29C5F /* LFSDataSource.m */; };
+		6FAA57921E880D8900E29C5F /* LFSArtistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAA57911E880D8900E29C5F /* LFSArtistCell.m */; };
+		6FAA57A21E881F2100E29C5F /* LFSAlbumsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAA57A11E881F2100E29C5F /* LFSAlbumsViewModel.m */; };
+		6FAA57A71E88211600E29C5F /* LFSAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAA57A61E88211600E29C5F /* LFSAlbumCell.m */; };
+		6FAA57AC1E88218700E29C5F /* LFSBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAA57AB1E88218700E29C5F /* LFSBaseCell.m */; };
+		6FAA57B11E88286F00E29C5F /* LFSGridFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAA57B01E88286F00E29C5F /* LFSGridFlowLayout.m */; };
+		6FAA57BA1E8904AA00E29C5F /* LFSCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAA57B91E8904AA00E29C5F /* LFSCountry.m */; };
 		6FE2323F1E81621300664566 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2323E1E81621300664566 /* main.m */; };
 		6FE232421E81621300664566 /* LFSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232411E81621300664566 /* LFSAppDelegate.m */; };
-		6FE232451E81621300664566 /* LFSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232441E81621300664566 /* LFSViewController.m */; };
+		6FE232451E81621300664566 /* LFSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232441E81621300664566 /* LFSCollectionViewController.m */; };
 		6FE232481E81621300664566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE232461E81621300664566 /* Main.storyboard */; };
 		6FE2324A1E81621300664566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE232491E81621300664566 /* Assets.xcassets */; };
 		6FE2324D1E81621300664566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE2324B1E81621300664566 /* LaunchScreen.storyboard */; };
@@ -18,7 +31,6 @@
 		6FE2326C1E81691900664566 /* LFSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2326B1E81691900664566 /* LFSImage.m */; };
 		6FE2326E1E816C9E00664566 /* LFSArtistMappingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2326D1E816C9E00664566 /* LFSArtistMappingTests.m */; };
 		6FE232701E816E0900664566 /* artist_fixture.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FE2326F1E816E0900664566 /* artist_fixture.json */; };
-		6FE232771E81720A00664566 /* LFSError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232761E81720A00664566 /* LFSError.m */; };
 		6FE2327B1E81727F00664566 /* LFSAPIRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2327A1E81727F00664566 /* LFSAPIRequestSerializer.m */; };
 		6FE2327E1E81757D00664566 /* LFSHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE2327D1E81757D00664566 /* LFSHTTPClient.m */; };
 		6FE232811E81790E00664566 /* LFSAPIFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE232801E81790E00664566 /* LFSAPIFacade.m */; };
@@ -43,12 +55,38 @@
 /* Begin PBXFileReference section */
 		0121B12914E084A9D35639A8 /* Pods-LastFMScrobbler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LastFMScrobbler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LastFMScrobbler/Pods-LastFMScrobbler.debug.xcconfig"; sourceTree = "<group>"; };
 		584D57C3B4BBEB23575843F4 /* Pods-LastFMScrobblerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LastFMScrobblerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LastFMScrobblerTests/Pods-LastFMScrobblerTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F223E1C1E8571E400B48B78 /* LFSListFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSListFlowLayout.h; sourceTree = "<group>"; };
+		6F223E1D1E8571E400B48B78 /* LFSListFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSListFlowLayout.m; sourceTree = "<group>"; };
+		6F223E221E8573EC00B48B78 /* LFSArtistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSArtistsViewController.h; sourceTree = "<group>"; };
+		6F223E231E8573EC00B48B78 /* LFSArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSArtistsViewController.m; sourceTree = "<group>"; };
+		6F223E251E8573F900B48B78 /* LFSArtistsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSArtistsViewModel.h; sourceTree = "<group>"; };
+		6F223E261E8573F900B48B78 /* LFSArtistsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSArtistsViewModel.m; sourceTree = "<group>"; };
+		6F223E2B1E87E41800B48B78 /* LFSRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSRouter.h; sourceTree = "<group>"; };
+		6F223E2C1E87E41800B48B78 /* LFSRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSRouter.m; sourceTree = "<group>"; };
+		6F223E2E1E87F1CE00B48B78 /* LFSAppScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAppScope.h; sourceTree = "<group>"; };
+		6F223E2F1E87F1CE00B48B78 /* LFSAppScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSAppScope.m; sourceTree = "<group>"; };
+		6F223E311E87F30800B48B78 /* LFSCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSCollectionViewModel.h; sourceTree = "<group>"; };
+		6F223E321E87F30800B48B78 /* LFSCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSCollectionViewModel.m; sourceTree = "<group>"; };
+		6FAA57881E87F57F00E29C5F /* LFSDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSDataSource.h; sourceTree = "<group>"; };
+		6FAA57891E87F57F00E29C5F /* LFSDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSDataSource.m; sourceTree = "<group>"; };
+		6FAA57901E880D8900E29C5F /* LFSArtistCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSArtistCell.h; sourceTree = "<group>"; };
+		6FAA57911E880D8900E29C5F /* LFSArtistCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSArtistCell.m; sourceTree = "<group>"; };
+		6FAA57A01E881F2100E29C5F /* LFSAlbumsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAlbumsViewModel.h; sourceTree = "<group>"; };
+		6FAA57A11E881F2100E29C5F /* LFSAlbumsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSAlbumsViewModel.m; sourceTree = "<group>"; };
+		6FAA57A51E88211600E29C5F /* LFSAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAlbumCell.h; sourceTree = "<group>"; };
+		6FAA57A61E88211600E29C5F /* LFSAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSAlbumCell.m; sourceTree = "<group>"; };
+		6FAA57AA1E88218700E29C5F /* LFSBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSBaseCell.h; sourceTree = "<group>"; };
+		6FAA57AB1E88218700E29C5F /* LFSBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSBaseCell.m; sourceTree = "<group>"; };
+		6FAA57AF1E88286F00E29C5F /* LFSGridFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSGridFlowLayout.h; sourceTree = "<group>"; };
+		6FAA57B01E88286F00E29C5F /* LFSGridFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSGridFlowLayout.m; sourceTree = "<group>"; };
+		6FAA57B81E8904AA00E29C5F /* LFSCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSCountry.h; sourceTree = "<group>"; };
+		6FAA57B91E8904AA00E29C5F /* LFSCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSCountry.m; sourceTree = "<group>"; };
 		6FE2323A1E81621300664566 /* LastFMScrobbler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastFMScrobbler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE2323E1E81621300664566 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6FE232401E81621300664566 /* LFSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSAppDelegate.h; sourceTree = "<group>"; };
 		6FE232411E81621300664566 /* LFSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSAppDelegate.m; sourceTree = "<group>"; };
-		6FE232431E81621300664566 /* LFSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSViewController.h; sourceTree = "<group>"; };
-		6FE232441E81621300664566 /* LFSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSViewController.m; sourceTree = "<group>"; };
+		6FE232431E81621300664566 /* LFSCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSCollectionViewController.h; sourceTree = "<group>"; };
+		6FE232441E81621300664566 /* LFSCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSCollectionViewController.m; sourceTree = "<group>"; };
 		6FE232471E81621300664566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FE232491E81621300664566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FE2324C1E81621300664566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,8 +99,6 @@
 		6FE2326B1E81691900664566 /* LFSImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSImage.m; sourceTree = "<group>"; };
 		6FE2326D1E816C9E00664566 /* LFSArtistMappingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSArtistMappingTests.m; sourceTree = "<group>"; };
 		6FE2326F1E816E0900664566 /* artist_fixture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artist_fixture.json; sourceTree = "<group>"; };
-		6FE232751E81720A00664566 /* LFSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSError.h; sourceTree = "<group>"; };
-		6FE232761E81720A00664566 /* LFSError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSError.m; sourceTree = "<group>"; };
 		6FE232791E81727F00664566 /* LFSAPIRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSAPIRequestSerializer.h; sourceTree = "<group>"; };
 		6FE2327A1E81727F00664566 /* LFSAPIRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSAPIRequestSerializer.m; sourceTree = "<group>"; };
 		6FE2327C1E81757D00664566 /* LFSHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSHTTPClient.h; sourceTree = "<group>"; };
@@ -118,6 +154,184 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6F223E191E8569ED00B48B78 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6F223E2A1E87E40B00B48B78 /* Router */,
+				6F223E1F1E8573BB00B48B78 /* ViewControllers */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		6F223E1F1E8573BB00B48B78 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA579A1E881DE600E29C5F /* Albums */,
+				6F223E211E8573CC00B48B78 /* Artists */,
+				6F223E201E8573C300B48B78 /* Base */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6F223E201E8573C300B48B78 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA57AD1E88235200E29C5F /* DataSource */,
+				6FAA57A81E88211E00E29C5F /* Cell */,
+				6FAA57971E881DA300E29C5F /* ViewController */,
+				6FAA57981E881DAF00E29C5F /* ViewModel */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		6F223E211E8573CC00B48B78 /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA57B71E89048200E29C5F /* Models */,
+				6FAA578F1E880D7100E29C5F /* Cell */,
+				6FAA578D1E880D3F00E29C5F /* Layout */,
+				6FAA578B1E880D2C00E29C5F /* ViewController */,
+				6FAA578C1E880D3600E29C5F /* ViewModel */,
+			);
+			name = Artists;
+			sourceTree = "<group>";
+		};
+		6F223E2A1E87E40B00B48B78 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6F223E2B1E87E41800B48B78 /* LFSRouter.h */,
+				6F223E2C1E87E41800B48B78 /* LFSRouter.m */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		6FAA578B1E880D2C00E29C5F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6F223E221E8573EC00B48B78 /* LFSArtistsViewController.h */,
+				6F223E231E8573EC00B48B78 /* LFSArtistsViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		6FAA578C1E880D3600E29C5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6F223E251E8573F900B48B78 /* LFSArtistsViewModel.h */,
+				6F223E261E8573F900B48B78 /* LFSArtistsViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		6FAA578D1E880D3F00E29C5F /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				6F223E1C1E8571E400B48B78 /* LFSListFlowLayout.h */,
+				6F223E1D1E8571E400B48B78 /* LFSListFlowLayout.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		6FAA578F1E880D7100E29C5F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA57901E880D8900E29C5F /* LFSArtistCell.h */,
+				6FAA57911E880D8900E29C5F /* LFSArtistCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		6FAA57971E881DA300E29C5F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6FE232431E81621300664566 /* LFSCollectionViewController.h */,
+				6FE232441E81621300664566 /* LFSCollectionViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		6FAA57981E881DAF00E29C5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6F223E311E87F30800B48B78 /* LFSCollectionViewModel.h */,
+				6F223E321E87F30800B48B78 /* LFSCollectionViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		6FAA57991E881DCC00E29C5F /* AppScope */ = {
+			isa = PBXGroup;
+			children = (
+				6F223E2E1E87F1CE00B48B78 /* LFSAppScope.h */,
+				6F223E2F1E87F1CE00B48B78 /* LFSAppScope.m */,
+			);
+			name = AppScope;
+			sourceTree = "<group>";
+		};
+		6FAA579A1E881DE600E29C5F /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA57AE1E88285A00E29C5F /* Layout */,
+				6FAA57A41E88210700E29C5F /* Cell */,
+				6FAA579F1E881F0F00E29C5F /* ViewModel */,
+			);
+			name = Albums;
+			sourceTree = "<group>";
+		};
+		6FAA579F1E881F0F00E29C5F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA57A01E881F2100E29C5F /* LFSAlbumsViewModel.h */,
+				6FAA57A11E881F2100E29C5F /* LFSAlbumsViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		6FAA57A41E88210700E29C5F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA57A51E88211600E29C5F /* LFSAlbumCell.h */,
+				6FAA57A61E88211600E29C5F /* LFSAlbumCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		6FAA57A81E88211E00E29C5F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA57AA1E88218700E29C5F /* LFSBaseCell.h */,
+				6FAA57AB1E88218700E29C5F /* LFSBaseCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		6FAA57AD1E88235200E29C5F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA57881E87F57F00E29C5F /* LFSDataSource.h */,
+				6FAA57891E87F57F00E29C5F /* LFSDataSource.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		6FAA57AE1E88285A00E29C5F /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA57AF1E88286F00E29C5F /* LFSGridFlowLayout.h */,
+				6FAA57B01E88286F00E29C5F /* LFSGridFlowLayout.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		6FAA57B71E89048200E29C5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6FAA57B81E8904AA00E29C5F /* LFSCountry.h */,
+				6FAA57B91E8904AA00E29C5F /* LFSCountry.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		6FE232311E81621300664566 = {
 			isa = PBXGroup;
 			children = (
@@ -141,11 +355,10 @@
 		6FE2323C1E81621300664566 /* LastFMScrobbler */ = {
 			isa = PBXGroup;
 			children = (
+				6F223E191E8569ED00B48B78 /* Presentation */,
 				6FE232651E8167FE00664566 /* Domain */,
 				6FE232401E81621300664566 /* LFSAppDelegate.h */,
 				6FE232411E81621300664566 /* LFSAppDelegate.m */,
-				6FE232431E81621300664566 /* LFSViewController.h */,
-				6FE232441E81621300664566 /* LFSViewController.m */,
 				6FE232461E81621300664566 /* Main.storyboard */,
 				6FE232491E81621300664566 /* Assets.xcassets */,
 				6FE2324B1E81621300664566 /* LaunchScreen.storyboard */,
@@ -176,6 +389,7 @@
 		6FE232651E8167FE00664566 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				6FAA57991E881DCC00E29C5F /* AppScope */,
 				6FE232781E81726300664566 /* API */,
 				6FE232661E81680200664566 /* Models */,
 			);
@@ -189,8 +403,6 @@
 				6FE232681E81681300664566 /* LFSArtist.m */,
 				6FE2326A1E81691900664566 /* LFSImage.h */,
 				6FE2326B1E81691900664566 /* LFSImage.m */,
-				6FE232751E81720A00664566 /* LFSError.h */,
-				6FE232761E81720A00664566 /* LFSError.m */,
 				6FE232901E8182AC00664566 /* LFSAlbum.h */,
 				6FE232911E8182AC00664566 /* LFSAlbum.m */,
 			);
@@ -472,20 +684,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FAA57BA1E8904AA00E29C5F /* LFSCountry.m in Sources */,
 				6FE232A61E82D37600664566 /* LFSAlbumsResponseWrapper.m in Sources */,
 				6FE232811E81790E00664566 /* LFSAPIFacade.m in Sources */,
-				6FE232451E81621300664566 /* LFSViewController.m in Sources */,
+				6F223E331E87F30800B48B78 /* LFSCollectionViewModel.m in Sources */,
+				6FAA57B11E88286F00E29C5F /* LFSGridFlowLayout.m in Sources */,
+				6FE232451E81621300664566 /* LFSCollectionViewController.m in Sources */,
+				6FAA57921E880D8900E29C5F /* LFSArtistCell.m in Sources */,
+				6F223E241E8573EC00B48B78 /* LFSArtistsViewController.m in Sources */,
 				6FE232421E81621300664566 /* LFSAppDelegate.m in Sources */,
 				6FE232691E81681300664566 /* LFSArtist.m in Sources */,
 				6FE2326C1E81691900664566 /* LFSImage.m in Sources */,
-				6FE232771E81720A00664566 /* LFSError.m in Sources */,
+				6FAA57A71E88211600E29C5F /* LFSAlbumCell.m in Sources */,
 				6FE2327B1E81727F00664566 /* LFSAPIRequestSerializer.m in Sources */,
 				6FE232921E8182AC00664566 /* LFSAlbum.m in Sources */,
 				6FE2327E1E81757D00664566 /* LFSHTTPClient.m in Sources */,
 				6FE2328C1E81800A00664566 /* LFSArtistsRequest.m in Sources */,
+				6F223E2D1E87E41800B48B78 /* LFSRouter.m in Sources */,
 				6FE2328F1E8181F300664566 /* LFSAlbumsRequest.m in Sources */,
+				6FAA57A21E881F2100E29C5F /* LFSAlbumsViewModel.m in Sources */,
 				6FE2323F1E81621300664566 /* main.m in Sources */,
+				6FAA57AC1E88218700E29C5F /* LFSBaseCell.m in Sources */,
+				6F223E1E1E8571E400B48B78 /* LFSListFlowLayout.m in Sources */,
+				6FAA578A1E87F57F00E29C5F /* LFSDataSource.m in Sources */,
+				6F223E301E87F1CE00B48B78 /* LFSAppScope.m in Sources */,
 				6FE2329B1E81938300664566 /* LFSArtistsResponseWrapper.m in Sources */,
+				6F223E271E8573F900B48B78 /* LFSArtistsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

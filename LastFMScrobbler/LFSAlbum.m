@@ -6,6 +6,7 @@
 //  Copyright © 2017 test. All rights reserved.
 //
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "LFSAlbum.h"
 
 @implementation LFSAlbum
@@ -43,5 +44,14 @@
     return [MTLJSONAdapter arrayTransformerWithModelClass:[LFSImage class]];
 }
 
+#pragma mark - Calculated
+
+- (NSURL *)defaultImageURL {
+    return [[self.images.rac_sequence filter:^BOOL(LFSImage *image) {
+        return image.size == LFSImageSizeLarge;
+    }] map:^id(LFSImage *image) {
+        return image.url;
+    }].array.firstObject;
+}
 
 @end

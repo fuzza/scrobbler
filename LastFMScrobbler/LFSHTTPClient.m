@@ -24,6 +24,7 @@
     self = [super initWithBaseURL:url];
     if(self) {
         [self setupRequestSerializerWithAPIKey:apiKey];
+        [self.reachabilityManager startMonitoring];
     }
     return self;
 }
@@ -37,17 +38,20 @@
     @weakify(self);
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         @strongify(self);
-        
-        // Here we can add some decision point based on request params which exact kind of HTTP request should be used, but for test task purposes GET is hardcoded.
-        NSURLSessionTask *task = [self GET:nil parameters:request success:^(NSURLSessionDataTask * task, id  responseObject) {
+        if(!self.reachabilityManager.isReachable) {
+            [subscriber sendError:self.reachabilityError];
+            return nil;
+        }
+        NSURLSessionTask *task = [self GET:@"" parameters:request success:^(NSURLSessionDataTask * task, id  responseObject) {
             NSError *error = nil;
             id mappedResponse =  [MTLJSONAdapter modelOfClass:[request.class responseClass]
                                            fromJSONDictionary:responseObject
                                                         error:&error];
             if(error) {
-                [subscriber sendNext:error];
+                [subscriber sendError:error];
             } else {
                 [subscriber sendNext:mappedResponse];
+                [subscriber sendCompleted];
             }
         } failure:^(NSURLSessionDataTask *task, NSError * error) {
             [subscriber sendError:error];
@@ -57,6 +61,14 @@
             [task cancel];
         }];
     }];
+}
+
+- (NSError *)reachabilityError {
+    return [NSError errorWithDomain:NSStringFromClass(self.class)
+                               code:-1001
+                           userInfo:@{
+                                      NSLocalizedDescriptionKey : NSLocalizedString(@"Your internet connection is down", nil)
+                                      }];
 }
 
 @end

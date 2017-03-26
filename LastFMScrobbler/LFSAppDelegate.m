@@ -6,28 +6,46 @@
 //  Copyright © 2017 test. All rights reserved.
 //
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <CriolloKitDI/CRDIInjector.h>
+#import "LFSAppScope.h"
 
 #import "LFSAppDelegate.h"
-
-#import "LFSHTTPClient.h"
-#import "LFSAPIFacade.h"
-#import "LFSArtist.h"
+#import "LFSRouter.h"
 
 @interface LFSAppDelegate ()
 
-@property (nonatomic, strong) LFSAPIFacade *apiClient;
+@property (nonatomic, strong) LFSRouter *router;
 
 @end
 
 @implementation LFSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    LFSHTTPClient *client = [[LFSHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://ws.audioscrobbler.com/2.0/"] apiKey:@"e81f61890b7ff8633ca024d0faa449e7"];
-    self.apiClient = [[LFSAPIFacade alloc] initWithExecutor:client];
-    
+    [self setupDependencyInjection];
+    [self setupWindow];
     return YES;
+}
+
+- (void)setupWindow {
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] init];
+    self.router = [[LFSRouter alloc] initWithNavigationController:navigationController];
+    [self.router showRootScreen];
+    
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+}
+
+- (void)setupDependencyInjection {
+    CRDIContainer *defaultContainer = [CRDIContainer new];
+    [CRDIContainer setDefaultContainer:defaultContainer];
+    
+    LFSAppScope *appScope = [[LFSAppScope alloc] initWithContainer:defaultContainer];
+    [appScope configure];
+
+    CRDIInjector *injector = [[CRDIInjector alloc] initWithContainer:defaultContainer];
+    [CRDIInjector setDefaultInjector:injector];
 }
 
 @end
